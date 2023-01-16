@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form cơ bản</title>
+</head>
+<body>
+    <form style="height: 200px; width: 500px; background-color: rgb(141, 199, 199);font-family: 'Times New Roman', Times, serif;">
+        <header style="height: 40px; width: 500px; font-size: 30px; text-align: center;background-color: rgb(93, 146, 9);color: white;">趣味</header>
+        <main style="margin-left: 40px;"><div style="margin-left: 20px;">Họ và tên:<input type="text" ></div>
+             <div  style="margin-left: 52px;">Email:<input type="text"></div>
+             <div style="margin-left: 30px;">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top;">Sở thích</td>
+                        <td><input type="checkbox" name="Thể thao" id="tt"><label for="tt">Thể Thao</label>
+                            <input type="checkbox" name="Âm Nhạc" id="an"><label for="an">Âm Nhạc</label>
+                            <input type="checkbox" name="Đọc Sách" id="ds"><label for="ds">Đọc Sách</label><br>
+                            <input type="checkbox" name="Lướt Wed" id="lw"><label for="lw">Lướt Wed</label>
+                            <input type="checkbox" name="Chơi Game" id="cg"><label for="cg">Chơi Game</label>
+                            <input type="checkbox" name="Điện Ảnh" id="da"><label for="da">Điện Ảnh</label><br>
+                            <input type="checkbox" name="Du Lịch" id="dl"><label for="dl">Du Lịch</label><br>
+                            <button type="submit">Gửi thông tin</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </form>
+    <br>
+    <form style="height: 300px;width: 500px; background-color: rgb(131, 185, 124);">
+        <header style="height: 40px; width: 500px; background-color: rgb(0, 0, 0); "><h2 style="color: white;margin-left: 20px;font-size: 30px;">Đăng ký học viên</h2></header>
+        <main style="margin-left: 10px; margin-top: 10px;">
+            Họ và tên <input type="text" style="margin-left: 33px; width: 150px;"><br>
+            Ngày sinh <input type="text" style="margin-left:30px; width: 125px;"><br>
+            <div>Giới tính<input style="margin-left:50px" type="radio" value="Nam" id="nam"><label for="nam">Nam</label> &nbsp;
+                <input type="radio" value="Nữ" id="nu"><label for="nu">Nữ</label></div>  
+            <table>
+                <tr>
+                    <td style="vertical-align: top;">Địa chỉ</td>
+                    <td><input type="text" style="margin-left: 50px; height: 60px;width: 300px;"></td>
+                </tr>
+            </table>
+            Lớp <select name="chọn lớp" id="chonlop" style="margin-left: 80px;">
+                <option value="chonlop">-Chọn lớp-</option>
+                <option value="Lớp 1">Lớp 1</option>
+                <option value="Lớp 2">Lớp 2</option>
+                </select><br>
+            Email <input type="email" name="mail" id="mail" style="margin-left: 62px;"><br>
+            Điện thoại <input type="number" style="margin-left: 30px;"><br>
+            <button type="submit" style="margin-left: 110px;">Đăng ký</button>
+            <button type="reset">Reset</button>
+            
+        </main>
+        
+    </form>
+</body>
+</html>
